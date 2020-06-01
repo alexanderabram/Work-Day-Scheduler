@@ -1,32 +1,23 @@
 const m = moment();
 
-
 var words;
 var hourInfo;
 
-
-console.log(m.format("dddd, MMMM Do"));
-
 $("#currentDay").text(m.format("dddd, MMMM Do"));
 
-
-
-$(document).ready( function() {
-    colorChange ();
-    renderText ();
+$(document).ready(function () {
+    colorChange();
+    renderText();
 });
 
-function colorChange () {
-    
+function colorChange() {
+
     var realTime = moment().hours();
-    // console.log("Time test" + timeTest);
-    console.log("Current Time" + realTime);
-    
+
 
     $(".input").each(function () {
         var timeTest = parseInt($(this).attr("id"));
-        console.log(timeTest);
-        
+
         if (realTime > timeTest) {
             $(this).removeClass("future");
             $(this).removeClass("present");
@@ -43,53 +34,50 @@ function colorChange () {
     });
 }
 
-
-$(".saveBtn").click(function() {
+$(".saveBtn").click(function () {
     words = $(this).siblings(".input").val();
-    console.log(words);
     hourInfo = $(this).siblings(".hour").text();
-    console.log(hourInfo);
     localStorage.setItem(hourInfo, JSON.stringify(words));
-    
-    colorChange ();
-    renderText ();
+
+    colorChange();
+    renderText();
 })
 
 
-function renderText () {
-    var saveWords9 = JSON.parse(localStorage.getItem("9:00 am"));
+function renderText() {
+    var save9 = JSON.parse(localStorage.getItem("9:00 am"));
     $("#9").val("");
-    $("#9").val(saveWords9);
-    
-    var saveWords10 = JSON.parse(localStorage.getItem("10:00 am"));
+    $("#9").val(save9);
+
+    var save10 = JSON.parse(localStorage.getItem("10:00 am"));
     $("#10").val("");
-    $("#10").val(saveWords10);
-    
-    var saveWords11 = JSON.parse(localStorage.getItem("11:00 am"));
+    $("#10").val(save10);
+
+    var save11 = JSON.parse(localStorage.getItem("11:00 am"));
     $("#11").val("");
-    $("#11").val(saveWords11);
-    
-    var saveWords12 = JSON.parse(localStorage.getItem("12:00 pm"));
+    $("#11").val(save11);
+
+    var save12 = JSON.parse(localStorage.getItem("12:00 pm"));
     $("#12").val("");
-    $("#12").val(saveWords12);
-    
-    var saveWords1 = JSON.parse(localStorage.getItem("1:00 pm"));
+    $("#12").val(save12);
+
+    var save1 = JSON.parse(localStorage.getItem("1:00 pm"));
     $("#1").val("");
-    $("#1").val(saveWords1);
+    $("#1").val(save1);
 
-    var saveWords2 = JSON.parse(localStorage.getItem("2:00 pm"));
+    var save2 = JSON.parse(localStorage.getItem("2:00 pm"));
     $("#2").val("");
-    $("#2").val(saveWords2);
+    $("#2").val(save2);
 
-    var saveWords3 = JSON.parse(localStorage.getItem("3:00 pm"));
+    var save3 = JSON.parse(localStorage.getItem("3:00 pm"));
     $("#3").val("");
-    $("#3").val(saveWords3);
+    $("#3").val(save3);
 
-    var saveWords4 = JSON.parse(localStorage.getItem("4:00 pm"));
+    var save4 = JSON.parse(localStorage.getItem("4:00 pm"));
     $("#4").val("");
-    $("#4").val(saveWords4);
+    $("#4").val(save4);
 
-    var saveWords5 = JSON.parse(localStorage.getItem("5:00 pm"));
+    var save5 = JSON.parse(localStorage.getItem("5:00 pm"));
     $("#5").val("");
-    $("#5").val(saveWords5);
+    $("#5").val(save5);
 }
