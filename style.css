@@ -4,6 +4,10 @@
     color: black;
 }
 
+body {
+    margin-bottom: 50px;
+}
+
 .time-block{
     text-align: center;
     padding: 15px;
