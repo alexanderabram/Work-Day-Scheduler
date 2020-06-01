@@ -13,3 +13,17 @@
     white-space: pre-wrap;
     height: 75px;
 }
+
+.past {
+    background-color: #e1e8f0;
+    color: black;
+}
+
+.present {
+    background-color: #ff0028;
+    color: black;
+}
+
+.future {
+    background-color: #478559;
+    color: black;
