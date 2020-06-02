@@ -4,7 +4,11 @@ Work Day Schedulure is a simple planner app that allows the user to save and edi
 
 ## Installation
 
-Use the provided link to access the Day Scheduler.
+Use the provided link to access the Day Scheduler.  
+
+https://alexanderabram.github.io/Work-Day-Scheduler/
+
+<img src=demo.png>
 
 ## Usage
 
