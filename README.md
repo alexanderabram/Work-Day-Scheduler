@@ -8,6 +8,8 @@ Use the provided link to access the Day Scheduler.
 
 https://alexanderabram.github.io/Work-Day-Scheduler/
 
+<img src=demo.png>
+
 ## Usage
 
 1. Input task(s) within the provided text box. Text boxes are organized hourly from 9am to 5pm.  
